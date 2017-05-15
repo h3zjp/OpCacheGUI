@@ -36,7 +36,7 @@ ini_set('date.timezone', 'Asia/Tokyo');
 /**
  * Setup the translator
  */
-$translator = new FileTranslator(__DIR__ . '/texts', 'en');
+$translator = new FileTranslator(__DIR__ . '/texts', 'ja');
 
 /**
  * Setup URI scheme (url rewrites [Router::URL_REWRITE] / query strings [Router::QUERY_STRING])
