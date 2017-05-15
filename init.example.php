@@ -25,13 +25,13 @@ use OpCacheGUI\Network\Router;
  * Setup error reporting
  */
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
-ini_set('log_errors', 0);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
 
 /**
  * Setup timezone
  */
-ini_set('date.timezone', 'Europe/Amsterdam');
+ini_set('date.timezone', 'Asia/Tokyo');
 
 /**
  * Setup the translator
@@ -41,7 +41,7 @@ $translator = new FileTranslator(__DIR__ . '/texts', 'en');
 /**
  * Setup URI scheme (url rewrites [Router::URL_REWRITE] / query strings [Router::QUERY_STRING])
  */
-$uriScheme = Router::URL_REWRITE;
+$uriScheme = Router::QUERY_STRING;
 
 /**
  * Login credentials
@@ -60,10 +60,11 @@ $uriScheme = Router::URL_REWRITE;
  *
  * Multiple addresses or ranges can be defined
  */
+//Disabled
 $login = [
-    'username'  => 'peehaa',
-    'password'  => '$2y$14$kHoRlbxPF7Bf1903cDMTgeYBsFgF8aJA46LIH9Nsg4/ocDa9HTTbe',
+    'username'  => '',
+    'password'  => '',
     'whitelist' => [
-        'localhost',
+        '',
     ],
 ];
